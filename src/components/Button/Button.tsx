@@ -1,14 +1,19 @@
+import { ReactNode } from "react";
 import "./Button.css";
 
 interface Props {
-  label: string;
+  children: ReactNode
   onClick: () => void;
 }
 
-export const Button = ({ label, onClick }: Props) => {
+export const ChildrenButton = ({ children }: Omit<Props, "onClick">) => {
+  return <>{children}</>;
+};
+
+export const Button = ({ children, onClick }: Props) => {
   return (
     <button className="custom__button" onClick={onClick}>
-      {label}
+      {children}
     </button>
   );
 };
