@@ -1,21 +1,10 @@
-import { useState } from "react";
-import { Button, ChildrenButton } from "./components";
 import "./App.css";
+import { CustomForm } from "./CustomForm";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  const handleClick = () => {
-    setCount((count) => count + 1);
-  };
-
   return (
     <>
-      <Button onClick={handleClick}>
-        <ChildrenButton>
-          <div>{count}</div>
-        </ChildrenButton>
-      </Button>
+      <CustomForm />
     </>
   );
 }

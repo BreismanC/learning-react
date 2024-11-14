@@ -1,0 +1,36 @@
+.is__invalid {
+  border-color:red;
+}
+
+.error {
+  color: red;
+  max-width: 200px;
+  margin-top: 0.25rem;
+}
+
+.form__group {
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.form__group input {
+  min-width: 200px;
+  min-height: 30px;
+}
+
+.form__control {
+  pad: 0.5rem;
+  border: 1px solid grey;
+  border-radius: 0.25rem;
+}
+
+.form__submit {
+  min-height: 30px;
+  min-width: 200px;
+}
